@@ -92,11 +92,11 @@ function createPlaneSelectionUI() {
   buttonF35.addEventListener('click', () => loadPlane('F35'));
   document.body.appendChild(buttonF35);
 
-  const buttonIntergalactic = document.createElement('button');
-  buttonIntergalactic.innerText = 'בחר מטוס Intergalactic';
-  buttonIntergalactic.style.cssText = 'position: absolute; top: 70px; left: 150px; z-index: 9999;';
-  buttonIntergalactic.addEventListener('click', () => loadPlane('intergalactic'));
-  document.body.appendChild(buttonIntergalactic);
+  // const buttonIntergalactic = document.createElement('button');
+  // buttonIntergalactic.innerText = 'בחר מטוס Intergalactic';
+  // buttonIntergalactic.style.cssText = 'position: absolute; top: 70px; left: 150px; z-index: 9999;';
+  // buttonIntergalactic.addEventListener('click', () => loadPlane('intergalactic'));
+  // document.body.appendChild(buttonIntergalactic);
 }
 createPlaneSelectionUI();
 
