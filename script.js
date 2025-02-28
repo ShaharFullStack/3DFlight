@@ -26,7 +26,7 @@ const loader = new GLTFLoader();
  * פונקציה לטעינת מטוס לפי שם מודל/סוג.
  * אם כבר קיים מטוס בסצנה – נסיר אותו לפני שנוסיף את החדש.
  */
-function loadPlane(modelName) {
+function loadPlane(modelName = '747') {
   // במידה ויש מטוס קיים, נסיר אותו מהשחקן
   if (currentPlane) {
     player.remove(currentPlane);
@@ -73,6 +73,10 @@ function loadPlane(modelName) {
     (error) => console.error(`שגיאה בטעינת ${modelName}:`, error)
   );
 }
+
+// קריאה ראשונית לברירת מחדל
+loadPlane();
+
 
 // ניצור 2 כפתורים לבחירת המטוס לדוגמה
 function createPlaneSelectionUI() {
